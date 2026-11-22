@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf8f5;
+    color: #1f1f1f;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Navigation Header */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    border-bottom: 1.5px solid #e6dcc8;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+#logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1.5px solid #b8860b;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-en {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #1f1f1f;
+}
+
+.brand-ur {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.9rem;
+    color: #b8860b;
+    line-height: 1.6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 0.92rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #b8860b;
+    border-bottom: 2px solid #b8860b;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1f1f1f;
+}
+
+/* Unified Responsive Hero Banner */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(18, 22, 25, 0.55), rgba(18, 22, 25, 0.72));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 0 20px;
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.hero-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.35rem;
+    color: #f3d078;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+.hero-content h1 {
+    font-size: 2.6rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #f0ece1;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.hero-cta {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1.5px solid #d4af37;
+    background-color: rgba(184, 134, 11, 0.25);
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+    background-color: #b8860b;
+    color: #ffffff;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.asktxt {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 26px 52px;
+    border-radius: 24px;
+    border: 1.5px solid #d4af37;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 45px;
+}
+
+.asktxt h2 {
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 6px;
+}
+
+.asktxt small {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #8a6305;
+    letter-spacing: 1px;
+}
+
+/* Balanced 2x2 Grid for the 4 Category Cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.but {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1.5px solid #ded6c8;
+    border-top: 4px solid #b8860b;
+    border-radius: 22px;
+    min-height: 185px;
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.35rem;
+    color: #b8860b;
+    line-height: 1.9;
+    transition: color 0.3s ease;
+}
+
+.card-divider {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin: 4px 0;
+}
+
+.card-en {
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #1f1f1f;
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.card-sub {
+    font-size: 0.84rem;
+    font-style: italic;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.but:hover {
+    transform: translateY(-6px);
+    background-color: #222222;
+    border-color: #b8860b;
+    box-shadow: 0 12px 26px rgba(184, 134, 11, 0.22);
+}
+
+.but:hover .card-urdu {
+    color: #f3d078;
+}
+
+.but:hover .card-en {
+    color: #ffffff;
+}
+
+.but:hover .card-sub {
+    color: #cccccc;
+}
+
+/* Verse of the Moment Spotlight */
+.spotlight-section {
+    margin: 70px auto 50px auto;
+    max-width: 740px;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    border: 1.5px solid #d4af37;
+    border-radius: 28px;
+    padding: 35px 30px;
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.08);
+}
+
+.spotlight-badge {
+    display: inline-block;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.95rem;
+    color: #8a6305;
+    background-color: #f9f3e3;
+    padding: 4px 18px 8px 18px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.spotlight-poetry {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.3rem;
+    line-height: 2.6;
+    color: #1c1c1c;
+    direction: rtl;
+    transition: opacity 0.3s ease;
+}
+
+.spotlight-poet {
+    display: block;
+    margin-top: 12px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.95rem;
+    color: #b8860b;
+    font-weight: bold;
+}
+
+.spotlight-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.action-btn {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.9rem;
+    padding: 4px 18px 8px 18px;
+    border-radius: 20px;
+    border: 1.5px solid #b8860b;
+    background-color: #b8860b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.action-btn.secondary {
+    background-color: transparent;
+    color: #333;
+}
+
+.action-btn:hover {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+/* Poets & About Sections */
+.poets-section,
+.about-section {
+    margin: 65px auto 30px auto;
+    max-width: 820px;
+}
+
+.section-heading {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: #1f1f1f;
+    border-bottom: 2px solid #b8860b;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.section-sub {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.poets-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    direction: rtl;
+}
+
+.poet-pill {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #d4af37;
+    color: #2c2c2c;
+    padding: 5px 20px 9px 20px;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #3a3a3a;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #f0eded;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 3px solid #b8860b;
+}
+
+.footer-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.3rem;
+    color: #d4af37;
+    margin-bottom: 8px;
+    line-height: 2;
+}
+
+.footer-copy {
+    font-size: 0.88rem;
+    letter-spacing: 2px;
+    color: #cccccc;
+}
+
+/* Scroll Reveal Helper */
+.reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 18px 0;
+        gap: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid #b8860b;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.65rem;
+        letter-spacing: 3px;
+    }
+
+    .hero-urdu {
+        font-size: 1.1rem;
+    }
+
+    .quote {
+        font-size: 0.95rem;
+    }
+
+    .asktxt {
+        padding: 20px 28px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+    }
+}

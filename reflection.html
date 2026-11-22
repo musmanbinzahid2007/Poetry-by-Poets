@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آئینۂ ذات | Reflection of Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reflection.css">
+    <script src="reflection.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <div class="allah-name">آئینۂ ذات</div>
+            <h1 class="english-title">REFLECTION OF ME</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2 id="english" class="intro-title">INTRODUCTION</h2>
+            <p class="intro-text english">
+                To understand the universe, one must first look into the mirror of the soul. Self-reflection is the quiet courage to sit with our own thoughts, question our purpose, embrace our imperfections, and recognize the silent strength carved by every trial we have survived. Beneath the noise of expectations and worldly titles lies our true essence—a traveler constantly learning, unlearning, and evolving toward clarity. The verses below capture the whispers of introspection, solitude, and self-discovery.
+            </p>
+
+            <div class="divider">♦</div>
+
+            <div class="urdu-title-container">
+                <h2 id="urdu" class="intro-title">تعارف</h2>
+            </div>
+            <p class="intro-text urdu">
+                کائنات کے اسرار کو سمجھنے سے پہلے انسان کے لیے خود اپنی ذات کے آئینے میں جھانکنا ضروری ہے۔ خود شناسی دراصل اپنی خاموشیوں، اپنی کمزوریوں، اپنے خوابوں اور اپنے اندر چھپے ہوئے اصل انسان سے ملاقات کا نام ہے۔ دنیا کے ہنگاموں اور مصنوعی چہروں سے پرے، جب انسان تنہائی میں اپنے آپ سے ہم کلام ہوتا ہے، تب اسے احساس ہوتا ہے کہ اصل سفر باہر کی دنیا کا نہیں بلکہ اپنے اندر اترنے کا ہے۔
+                <br><br>
+                علامہ اقبالؒ نے اسی حقیقت کو <strong>"خودی"</strong> کا نام دیا—کہ اپنے من میں ڈوب کر زندگی کا سراغ پایا جائے۔ نیچے دیے گئے اشعار انسان کے باطنی سفر، خود احتسابی، اور اپنی پہچان کی اسی جستجو کی ترجمانی کرتے ہیں۔
+            </p>
+        </section>
+
+        <section class="poetry-section">
+            <div class="poetry-heading">شاعری</div>
+
+            <!-- Search & Poet Filter Bar -->
+            <div class="filter-controls">
+                <input type="text" id="poetry-search" placeholder="شاعری یا شاعر تلاش کریں..." dir="rtl">
+                <div class="poet-buttons">
+                    <button class="filter-btn active" data-poet="all">تمام اشعار</button>
+                    <button class="filter-btn" data-poet="علامہ اقبال">علامہ اقبال</button>
+                    <button class="filter-btn" data-poet="جون ایلیا">جون ایلیا</button>
+                    <button class="filter-btn" data-poet="مرزا غالب">مرزا غالب</button>
+                    <button class="filter-btn" data-poet="غنی">غنی</button>
+                </div>
+            </div>
+
+            <div class="poetrycontainer">
+                <!-- Allama Iqbal -->
+                <div class="poetry">
+                    <p>
+                        اپنے من میں ڈوب کر پا جا سراغِ زندگی<br>
+                        تو اگر میرا نہیں بنتا نہ بن، اپنا تو بن
+                    </p>
+                    <small>علامہ اقبال</small>
+                </div>
+
+                <div class="poetry">
+                    <p>
+                        خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے<br>
+                        خدا بندے سے خود پوچھے بتا تیری رضا کیا ہے
+                    </p>
+                    <small>علامہ اقبال</small>
+                </div>
+
+                <div class="poetry">
+                    <p>
+                        تندیِ بادِ مخالف سے نہ گھبرا اے عقاب<br>
+                        یہ تو چلتی ہے تجھے اونچا اڑانے کے لیے
+                    </p>
+                    <small>علامہ اقبال</small>
+                </div>
+
+                <!-- Original Verse in Pen Name Ghani -->
+                <div class="poetry">
+                    <p>
+                        خود اپنے آپ سے ملنے کی جستجو ہے مجھے<br>
+                        درونِ ذات اترنے کی آرزو ہے مجھے<br><br>
+                        زمانے بھر کو سمجھنے میں عمر بیت گئی<br>
+                        اب اپنے عکس کے پڑھنے کی گفتگو ہے مجھے
+                    </p>
+                    <small>محمد عثمان بن زاہد (غنی)</small>
+                </div>
+
+                <!-- John Elia -->
+                <div class="poetry">
+                    <p>
+                        میں بھی بہت عجیب ہوں اتنا عجیب ہوں کہ بس<br>
+                        خود کو تباہ کر لیا اور ملال بھی نہیں
+                    </p>
+                    <small>جون ایلیا</small>
+                </div>
+
+                <!-- Mirza Ghalib -->
+                <div class="poetry">
+                    <p>
+                        ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے<br>
+                        بہت نکلے مرے ارمان لیکن پھر بھی کم نکلے
+                    </p>
+                    <small>مرزا غالب</small>
+                </div>
+
+                <!-- Mir Taqi Mir -->
+                <div class="poetry">
+                    <p>
+                        پتہ پتہ بوٹا بوٹا حال ہمارا جانے ہے<br>
+                        جانے نہ جانے گل ہی نہ جانے باغ تو سارا جانے ہے
+                    </p>
+                    <small>میر تقی میر</small>
+                </div>
+
+                <!-- Selected Introspective Couplets -->
+                <div class="poetry">
+                    <p>
+                        عمر بھر یہی بھول کرتا رہا<br>
+                        دھول چہرے پہ تھی اور آئینہ صاف کرتا رہا
+                    </p>
+                    <small>منتخب کلام</small>
+                </div>
+
+                <div class="poetry">
+                    <p>
+                        میں خود ہی اپنا آئینہ، میں خود ہی اپنا راز ہوں<br>
+                        جو خود کو پڑھ سکے اگر، وہی کتابِ ناز ہوں
+                    </p>
+                    <small>منتخب کلام</small>
+                </div>
+
+                <div class="poetry">
+                    <p>
+                        بھیڑ میں کھو کر خود کو ڈھونڈنا آساں نہ تھا<br>
+                        جب رُکا تنہائی میں، تب خود سے پہچان ہوئی
+                    </p>
+                    <small>منتخب کلام</small>
+                </div>
+
+                <div class="poetry">
+                    <p>
+                        جو سفر اختیار کرتے ہیں<br>
+                        وہی دریاؤں کو پار کرتے ہیں<br><br>
+                        چلنے والوں کا حوصلہ ہے بہت<br>
+                        رستے خود انتظار کرتے ہیں
+                    </p>
+                    <small>منتخب کلام</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-urdu">مَنْ عَرَفَ نَفْسَهُ فَقَدْ عَرَفَ رَبَّهُ</p>
+        <p class="footer-text">REFLECTION OF ME © 2026 | A Journey Within</p>
+    </footer>
+</body>
+</html>

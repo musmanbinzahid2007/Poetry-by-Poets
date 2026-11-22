@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POETRY BY POETS | بزمِ سخن</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img id="logo" src="logo.jpg" alt="Poetry By Poets Logo" onerror="this.style.display='none'">
+                <div class="brand-text">
+                    <span class="brand-en">POETRY BY POETS</span>
+                    <span class="brand-ur">بزمِ سخن</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#categories">Collections</a>
+                <a href="#featured-verse">Verse of the Moment</a>
+                <a href="#poets-section">Poets</a>
+                <a href="#about-section">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <img class="hero-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" alt="Serene Ocean Horizon">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-urdu">جہاں الفاظ تھم جائیں، وہاں شاعری بولتی ہے</p>
+            <h1>POETRY BY POETS</h1>
+            <p class="quote">"Where words fail, the poetry of poets speaks"</p>
+            <a href="#categories" class="hero-cta">Explore Collections ↓</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- 4 Category Collections Section -->
+        <section id="categories" class="collections-section">
+            <div class="asktxt">
+                <h2>VOICES OF THE SOUL</h2>
+                <small>Explore by Themes & Rhymes</small>
+            </div>
+
+            <div class="container">
+                <a href="divinelove.html" class="but">
+                    <span class="card-urdu">ذاتِ اِلٰہی</span>
+                    <span class="card-divider">♦</span>
+                    <span class="card-en">THE DIVINE LOVE</span>
+                    <span class="card-sub">Hamd & Spiritual Devotion</span>
+                </a>
+
+                <a href="mustafa.html" class="but">
+                    <span class="card-urdu">خَاتَمُ النَّبِيِّين ﷺ</span>
+                    <span class="card-divider">♦</span>
+                    <span class="card-en">THE FINAL MESSENGER ﷺ</span>
+                    <span class="card-sub">Naat & Khatm-e-Nubuwwat</span>
+                </a>
+
+                <a href="heaven.html" class="but">
+                    <span class="card-urdu">ماں - سایۂ رحمت</span>
+                    <span class="card-divider">♦</span>
+                    <span class="card-en">A SHADOW OF GOD'S MERCY</span>
+                    <span class="card-sub">Tribute to Motherhood</span>
+                </a>
+
+                <a href="reflection.html" class="but">
+                    <span class="card-urdu">آئینۂ ذات</span>
+                    <span class="card-divider">♦</span>
+                    <span class="card-en">REFLECTION OF ME</span>
+                    <span class="card-sub">Khudi & Inner Introspection</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Interactive Verse of the Moment -->
+        <section id="featured-verse" class="spotlight-section">
+            <div class="spotlight-card">
+                <div class="spotlight-badge">شعرِ امروز <space> | <space> Verse of the Moment</div>
+                <p class="spotlight-poetry" id="spotlight-poetry">
+                    اپنے من میں ڈوب کر پا جا سراغِ زندگی<br>
+                    تو اگر میرا نہیں بنتا نہ بن، اپنا تو بن
+                </p>
+                <small class="spotlight-poet" id="spotlight-poet">— علامہ محمد اقبال</small>
+                <div class="spotlight-actions">
+                    <button id="next-verse-btn" class="action-btn">اگلا شعر ↻</button>
+                    <button id="copy-spotlight-btn" class="action-btn secondary">شعر کاپی کریں</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Poets Showcase -->
+        <section id="poets-section" class="poets-section">
+            <h2 class="section-heading">IMMORTAL VOICES</h2>
+            <p class="section-sub">Masters of Classical & Modern Urdu Verse</p>
+            <div class="poets-grid">
+                <div class="poet-pill">علامہ محمد اقبال</div>
+                <div class="poet-pill">امام احمد رضا خان</div>
+                <div class="poet-pill">منور رانا</div>
+                <div class="poet-pill">مرزا غالب</div>
+                <div class="poet-pill">جون ایلیا</div>
+                <div class="poet-pill">مظفر وارثی</div>
+                <div class="poet-pill">بابا بلھے شاہ</div>
+                <div class="poet-pill">محمد عثمان بن زاہد (غنی)</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="about-section">
+            <h2 class="section-heading">ABOUT THIS SANCTUARY</h2>
+            <p class="about-text">
+                <strong>Poetry By Poets</strong> is a bilingual literary sanctuary dedicated to preserving and celebrating timeless Urdu and English poetry-spanning sacred praise of the Creator, devotion to the Final Messenger ﷺ, the unconditional mercy of mothers, and the quiet depths of self-reflection.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-urdu">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى آلِ مُحَمَّدٍ</p>
+        <p class="footer-copy">POETRY BY POETS  <space>|<space>  Curated with Love for Literature</p>
+    </footer>
+</body>
+</html>

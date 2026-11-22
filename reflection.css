@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f8f6;
+    color: #222;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 0 12px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
+}
+
+.allah-name {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 28px;
+    color: #b8860b;
+    line-height: 1.7;
+    margin-bottom: 2px;
+}
+
+.english-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    color: #2c3e50;
+}
+
+/* Main Section */
+main {
+    padding-top: 105px;
+    z-index: 1;
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-bottom: 2px solid #b8860b;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2#urdu.intro-title {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    letter-spacing: 0;
+    line-height: 1.9;
+    padding-bottom: 8px;
+}
+
+.urdu-title-container {
+    text-align: right;
+    width: 100%;
+}
+
+.intro-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.english {
+    text-align: left;
+    font-size: 1.15rem;
+}
+
+.urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    text-align: right;
+    font-size: 1.15rem;
+    word-spacing: 3px;
+    line-height: 2.5;
+}
+
+.divider {
+    color: #b8860b;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Poetry Section */
+.poetry-section {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.poetry-heading {
+    display: inline-block;
+    margin: 30px auto 25px auto;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 2rem;
+    color: #1a252f;
+    border: 2px solid #b8860b;
+    border-radius: 35px;
+    padding: 4px 35px 16px 35px;
+    line-height: 1.8;
+    background-color: #ffffff;
+}
+
+/* Search & Filter Controls */
+.filter-controls {
+    max-width: 780px;
+    margin: 15px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#poetry-search {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 20px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 25px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease;
+}
+
+#poetry-search:focus {
+    border-color: #b8860b;
+}
+
+.poet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    direction: rtl;
+}
+
+.filter-btn {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.95rem;
+    padding: 4px 18px 8px 18px;
+    border: 1.5px solid #2c3e50;
+    border-radius: 22px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #ffffff;
+}
+
+/* Poetry Cards */
+.poetrycontainer {
+    padding: 35px 10px 60px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poetry {
+    width: 100%;
+    max-width: 780px;
+    border: 1.5px solid #cbd5e1;
+    border-top: 4px solid #b8860b;
+    border-radius: 28px;
+    background-color: #ffffff;
+    margin: 18px 0;
+    padding: 30px 40px;
+    box-shadow: 0 5px 16px rgba(44, 62, 80, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.poetry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(44, 62, 80, 0.14);
+}
+
+.poetry p {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.2rem;
+    line-height: 2.6;
+    color: #1f2937;
+    direction: rtl;
+}
+
+.poetry small {
+    display: block;
+    margin-top: 14px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #b8860b;
+}
+
+/* Scroll Reveal & Copy Button */
+.fade-card {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.65s ease-out, transform 0.65s ease-out, box-shadow 0.25s ease;
+}
+
+.fade-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.copy-verse-btn {
+    margin-top: 16px;
+    padding: 4px 16px 8px 16px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.85rem;
+    color: #2c3e50;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.copy-verse-btn:hover {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #ffffff;
+}
+
+.copy-verse-btn.copied {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+    color: #ffffff;
+}
+
+/* Floating Self-Reflection Prompt Widget */
+.reflection-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    border: 1.5px solid #b8860b;
+    border-radius: 18px;
+    padding: 12px 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    z-index: 20;
+    max-width: 260px;
+}
+
+.reflection-widget-title {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.85rem;
+    color: #b8860b;
+    font-weight: bold;
+}
+
+.reflection-prompt-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin: 6px 0 10px 0;
+    line-height: 2;
+    direction: rtl;
+}
+
+#next-reflection-btn {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    padding: 3px 16px 6px 16px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#next-reflection-btn:hover {
+    background-color: #b8860b;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: 1.5px solid #b8860b;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    z-index: 20;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    background-color: #b8860b;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background-color: #1a252f;
+    color: #f0eded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #b8860b;
+}
+
+.footer-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.3rem;
+    color: #d4af37;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+.footer-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #cbd5e1;
+}
